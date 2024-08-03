@@ -12,11 +12,13 @@ Part of what this code challenge is testing is your ability to follow given inst
 This Phase 2 challenge will cover your knowledge of React. 
 Topics will include:
 - props 
-- events, 
+- events
 - rendering 
+- state
+- working with forms
 - code structure/efficiency. 
 
-*Please note that this does not limit you to only applying the React concepts you've learnt so far, it also calls on you to always look back to your JavaScript.*
+*Please note that this does not limit you to only applying the React concepts you've learnt so far, it also calls on you to always look back to your JavaScript. These include stuff like data fetching which we learnt in phase 1*
 
 N/B: For those who feel like they can use `useEffect()` hook, feel free to do so, but it is not a requirement for this code challenge, as we are yet to cover it.
 
