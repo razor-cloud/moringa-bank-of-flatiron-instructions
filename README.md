@@ -1,42 +1,56 @@
 # Bank of Flatiron
 
-Welcome to the Bank of Flatiron, where you can trust us with all your financial data!
+Welcome to the Bank of Flatiron, where you can trust us with all your financial
+data! Use the below gif as an example of how the app should function.
 
+![demo](https://curriculum-content.s3.amazonaws.com/phase-2/phase-2-code-challenge-bank-of-flatiron/demo.gif)
+
+> To view in VSCode, right click on the README.md file and select "Open Preview".
 
 ## Instructions
 
-For this project, you’ll be building out a React application that displays a list of your recent bank transactions, among other features.
+For this project, you’ll be building out a React application that displays a
+list of your recent bank transactions, among other features.
 
-Part of what this code challenge is testing is your ability to follow given instructions. While you will definitely have a significant amount of freedom in how you implement the features, be sure to carefully read the directions for setting up the application.
+Part of what this code challenge is testing is your ability to follow given
+instructions. While you will definitely have a significant amount of freedom in
+how you implement the features, be sure to carefully read the directions for
+setting up the application.
 
-This Phase 2 challenge will cover your knowledge of React. 
-Topics will include:
-- props 
-- events
-- rendering 
-- state
-- working with forms
-- code structure/efficiency. 
+## Setup
 
-*Please note that this does not limit you to only applying the React concepts you've learnt so far, it also calls on you to always look back to your JavaScript. These include stuff like data fetching which we learnt in phase 1*
+After unbundling the project:
 
-N/B: For those who feel like they can use `useEffect()` hook, feel free to do so, but it is not a requirement for this code challenge, as we are yet to cover it.
+1. Run `npm install` in your terminal.
+2. Run `npm run server`. This will run your backend on port `8001`.
+3. In a new terminal, run `npm start`. This will run your React app on port `8000`.
+
+Make sure to open
+[http://localhost:8001/transactions](http://localhost:8001/transactions) in the
+browser to verify that your backend is working before you proceed!
+
+The app uses [Semantic UI](https://semantic-ui.com/) for styling. If you see any
+unfamiliar classNames on some components, don't sweat! That's coming from
+Semantic UI and you shouldn't need to touch it.
+
+If you are unfamiliar with HTML tables, take a look at the
+[docs with an example here](https://www.w3schools.com/html/html_tables.asp)
 
 ## Endpoints
 
-**The data to be used is in the `db.json` file inside this repo. Copy this data and paste in into your own `db.json` file in the root of your project.**
-
-If using `Create React App`, ensure you run the JSON Server first before running the React Server. This is because both run on port 3000 by default but React's local server can find another server to run on if port 3000 is already taken by JSON Server.
+The base URL for your backend is: `http://localhost:8001`
 
 ## Core Deliverables
 
 As a user, I should be able to:
 
 - See a table of the transactions.
-- Fill out and submit the form to add a new transaction. This should add the new transaction to the table **as well as post the new transaction to the backend API for persistence**.
-- Filter transactions by typing into the search bar. Only transactions with a description matching the search term should be shown in the transactions table.
-
-NB: **Deploy both your frontend and the `db.json` once you are done and ensure to change the URL you're fetching from to the deployed backend. Undeployed work will not be graded.**
+- Fill out and submit the form to add a new transaction. This should add the new
+  transaction to the table **as well as post the new transaction to the backend
+  API for persistence**.
+- Filter transactions by typing into the search bar. Only transactions with a
+  description matching the search term should be shown in the transactions
+  table.
 
 ### Endpoints for Core Deliverables
 
@@ -46,20 +60,20 @@ Example Response:
 
 ```json
 [
-	{
-		"id": 1,
-		"date": "2019-12-01",
-		"description": "Paycheck from Bob's Burgers",
-		"category": "Income",
-		"amount": 1000
-	},
-	{
-		"id": 2,
-		"date": "2019-12-01",
-		"description": "South by Southwest Quinoa Bowl at Fresh & Co",
-		"category": "Food",
-		"amount": -10.55
-	}
+  {
+    "id": 1,
+    "date": "2019-12-01",
+    "description": "Paycheck from Bob's Burgers",
+    "category": "Income",
+    "amount": 1000
+  },
+  {
+    "id": 2,
+    "date": "2019-12-01",
+    "description": "South by Southwest Quinoa Bowl at Fresh & Co",
+    "category": "Food",
+    "amount": -10.55
+  }
 ]
 ```
 
@@ -88,11 +102,11 @@ Example Response:
 
 ```json
 {
-	"id": 1,
-	"date": "2019-12-01",
-	"description": "Paycheck from Bob's Burgers",
-	"category": "Income",
-	"amount": 1000
+  "id": 1,
+  "date": "2019-12-01",
+  "description": "Paycheck from Bob's Burgers",
+  "category": "Income",
+  "amount": 1000
 }
 ```
 
@@ -102,7 +116,8 @@ These deliverables are not required to pass the code challenge, but if you have
 the extra time, or even after the code challenge, they are a great way to
 stretch your skills.
 
-> Note: If you are going to attempt these advanced deliverables, please be sure to have a working commit with all the Core Deliverables first!
+> Note: If you are going to attempt these advanced deliverables, please be sure
+> to have a working commit with all the Core Deliverables first!
 
 As a user, I should be able to:
 
